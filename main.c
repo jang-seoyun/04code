@@ -7,8 +7,8 @@ int main (int argc, char *argv[]){
     b = 4;
     c = 5;
     
-    y = ax^+bx+c
-    m = (x+y+z)/3
+    y = a*x^+b*x+c;
+    m = (x+y+z)/3;
 
     printf("y=%d, m=%d", y, m);
 }
