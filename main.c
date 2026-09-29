@@ -1,17 +1,14 @@
 #include <studio.h>
 
 int main (void){
-    int a, b;
+    int input_sec, min, sec;
 
-    printf("input two integers : ");
+    printf("input the second :");
+    scanf("%d, &input_sec");
 
-    scanf("%d %d", &a, &b);
+    min = input_sec / 60; 
+    sec = input_sec % 60;
 
-    printf("+ result is %d\n", a + b);
-    printf("- result is %d\n", a - b);
-    printf("* result is %d\n", a * b);
-    printf("/ result is %d\n", a / b);
-    printf("%% result is %d\n", a % b);
-
+    printf("the time is %d : %d\n", min, sec);
     return 0;
 }
