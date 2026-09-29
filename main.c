@@ -1,14 +1,14 @@
 #include <studio.h>
 
 int main (void){
-    int input_sec, min, sec;
+    int year;
+    int is_leap;
 
-    printf("input the second :");
-    scanf("%d, &input_sec");
+    printf("input the year :");
+    scanf("%d", &year);
 
-    min = input_sec / 60; 
-    sec = input_sec % 60;
+    is_leap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
+    printf("is the year %d the leap year? : %d\n", year, is_leap);
 
-    printf("the time is %d : %d\n", min, sec);
     return 0;
 }
