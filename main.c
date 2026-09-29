@@ -1,14 +1,17 @@
-int main (int argc, char *argv[]){
-    int x, y, z, m;
-    int a, b, c;
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
-    
-    y = a*x^+b*x+c;
-    m = (x+y+z)/3;
+#include <studio.h>
 
-    printf("y=%d, m=%d", y, m);
+int main (void){
+    int a, b;
+
+    printf("input two integers : ");
+
+    scanf("%d %d", &a, &b);
+
+    printf("+ result is %d\n", a + b);
+    printf("- result is %d\n", a - b);
+    printf("* result is %d\n", a * b);
+    printf("/ result is %d\n", a / b);
+    printf("%% result is %d\n", a % b);
+
+    return 0;
 }
