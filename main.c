@@ -1,14 +1,19 @@
 #include <studio.h>
 
-int main (void){
-    int year;
-    int is_leap;
+int main (int argc, char *argv[]){
+    unsigned int x;
+    int b;
 
-    printf("input the year :");
-    scanf("%d", &year);
+    printf("input a number : ");
+    scanf("%ui", &x);
 
-    is_leap = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
-    printf("is the year %d the leap year? : %d\n", year, is_leap);
+    for (b = 0; x != 0; x >>= 1){
+        if (x&1){
+            b++;
+        }
+    }
+    
+    printf("The result is : %i\n", b);
 
     return 0;
 }
